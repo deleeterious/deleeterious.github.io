@@ -1,0 +1,7 @@
+<svg id="Component_2_1" data-name="Component 2 – 1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Эллипс_1" data-name="Эллипс 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3" stroke-dasharray="0 6">
+    <circle cx="30" cy="30" r="30" stroke="none"/>
+    <circle cx="30" cy="30" r="28.5" fill="none"/>
+  </g>
+  <path id="Forma_1" data-name="Forma 1" d="M1233.152,2299.145l-.008.009a.411.411,0,0,0-.085.419l7.184,19.58a.379.379,0,0,0,.345.252.373.373,0,0,0,.351-.241l2.282-5.747,7.107,7.446a.531.531,0,0,0,.775,0l2.767-2.9a.6.6,0,0,0,0-.812l-7.1-7.446,5.482-2.392a.39.39,0,0,0,.23-.367h0a.4.4,0,0,0-.241-.362l-18.685-7.529A.365.365,0,0,0,1233.152,2299.145Z" transform="translate(-1214 -2280)" fill="#fff"/>
+</svg>

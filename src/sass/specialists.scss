@@ -1,0 +1,50 @@
+.specialists {
+  text-align: center;
+  margin: 90px 0 140px 0;
+
+  @media (max-width: 710px) {
+    .specialists {
+      &__content {
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      &__card {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  &__card {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__card__icon {
+    width: fit-content;
+    align-self: center;
+  }
+
+  &__card__title {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: 35px;
+  }
+
+  &__card__par {
+    margin: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+}

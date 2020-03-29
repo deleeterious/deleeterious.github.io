@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap-cont {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.link-btn {
+  display: block;
+  width: 274px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 70px;
+  border-radius: 6px;
+}
+
+.banner-img_cont {
+  max-height: 540px;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+@import 'top-banner.scss';
+@import 'specialists.scss';
+@import 'how-it-works.scss';
+@import 'recalls.scss';
+@import 'our-preferences.scss';
+@import 'call-us.scss';
+@import 'main-footer.scss';
