@@ -10,24 +10,33 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.(scss|sass)/,
-      use: [{
-          loader: MiniCSS.loader
-        },
-        'css-loader',
-        'sass-loader'
-      ]
-    }]
+        test: /\.(scss|sass)/,
+        use: [{
+            loader: MiniCSS.loader
+          },
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: [{
+            loader: MiniCSS.loader
+          },
+          'css-loader'
+        ]
+      }
+    ]
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: './src/index.html'
+      template: path.resolve(__dirname, 'src/index.html')
     }),
     new MiniCSS({
       filename: 'style.css'
     })
   ],
   devServer: {
-    port: 1337,
+    overlay: true
   }
 }

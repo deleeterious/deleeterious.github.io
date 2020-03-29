@@ -7,13 +7,7 @@
   color: #fff;
 
   @media (max-width: 1440px) {
-    & {
-      background-size: auto;
-
-      &__title {
-        font-size: 40px;
-      }
-    }
+    background-size: auto;
   }
 
   &:after {
@@ -42,6 +36,10 @@
     z-index: 2;
     max-width: 770px;
     text-align: center;
+
+    @media (max-width: 790px) {
+      padding-top: 150px;
+    }
   }
 
   &__title_primary {
@@ -54,11 +52,11 @@
     margin-top: 35px;
     font-size: 26px;
     font-weight: 400;
-  }
 
-  &__subtitle_primary {
-    color: #8ae2e2;
-    font-weight: 700;
+    &--primary {
+      color: #8ae2e2;
+      font-weight: 700;
+    }
   }
 
   &__link-btn {

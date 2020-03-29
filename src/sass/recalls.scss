@@ -4,17 +4,11 @@
   flex-direction: column;
   justify-content: space-evenly;
 
-  @media (max-width: 870px) {
-    .recalls__title {
+  &__title {
+    @media (max-width: 870px) {
       margin-top: 40px;
     }
 
-    .recalls__item-cont {
-      margin-bottom: 40px;
-    }
-  }
-
-  &__title {
     font-size: 36px;
     font-weight: 900;
     color: #0b2a37;
@@ -22,7 +16,11 @@
     margin-bottom: 80px;
   }
 
-  &__item-cont {
+  &__items-cont {
+    @media (max-width: 870px) {
+      margin-bottom: 40px;
+    }
+
     height: auto;
     display: flex;
     min-height: 460px;
@@ -30,47 +28,47 @@
     justify-content: space-around;
     align-items: center;
   }
+}
 
-  &__item {
-    width: 410px;
-    margin: 10px;
-  }
+.recalls-item {
+  width: 410px;
+  margin: 10px;
 
-  &__item__message {
+  &__message {
     position: relative;
     height: 130px;
     margin-bottom: 20px;
     padding: 35px 20px 0 20px;
     background: #eff7f7;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 15px;
+      border-color: #eff7f7 #eff7f7 transparent transparent;
+      bottom: -20px;
+      right: 0;
+    }
   }
 
-  &__item__message::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 15px;
-    border-color: #eff7f7 #eff7f7 transparent transparent;
-    bottom: -20px;
-    right: 0;
-  }
-
-  &__item_flex-cont {
+  &__flex-cont {
     display: flex;
     justify-content: flex-end;
   }
 
-  &__item_flex-item {
+  &__flex-item {
     text-align: right;
   }
 
-  &__item__user-name {
+  &__user-name {
     font-size: 16px;
     font-weight: 700;
   }
 
-  &__item__user-icon {
+  &__user-icon {
     padding-left: 5px;
   }
 }

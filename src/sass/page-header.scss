@@ -1,0 +1,151 @@
+.page-header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+
+    @media (max-width: 790px) {
+      height: 70px;
+    }
+  }
+
+  &__flex-cont {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 260px;
+    height: 60px;
+    background: url('/src/img/main-logo.png') no-repeat center;
+    background-size: 100%;
+    margin-right: 30px;
+  }
+
+  &__bordered-btns {
+    @media (max-width: 790px) {
+      display: none;
+    }
+  }
+
+  &__bordered-btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 38px;
+    padding: 0 16px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+
+  &__auth-btns {
+    @media (max-width: 790px) {
+      display: none;
+    }
+  }
+
+  &__auth-btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 45px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &--fixed {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+
+    .page-header__logo {
+      background: url('/src/img/main-logo-dark.png') no-repeat center;
+    }
+
+    .page-header__bordered-btn {
+      border: 2px solid #196281;
+      color: #196281;
+    }
+
+    .page-header__auth-btn {
+      color: #0b2a37;
+    }
+
+    .page-header-menu__icon {
+      background: url('/src/img/hamburger-menu-icon-dark.png') no-repeat center;
+    }
+
+    .page-header-menu__title {
+      color: #0b2a37;
+    }
+
+    .page-header-menu__nav {
+      border: 1px solid #0b2a37;
+      background: #fff;
+      top: 70px;
+    }
+
+    .page-header-menu__item {
+      color: #0b2a37;
+      border-bottom: 1px solid #0b2a37;
+    }
+
+  }
+}
+
+.page-header-menu {
+  display: none;
+  @media (max-width: 790px){
+    display: block;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__icon {
+    background: url('/src/img/hamburger-menu-icon-white.png') no-repeat center;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__nav {
+    position: absolute;
+    text-align: right;
+    top: 50px;
+    right: 0;
+    background: transparent;
+    width: 150px;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: block;
+    color: #fff;
+    padding: 5px 20px;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
